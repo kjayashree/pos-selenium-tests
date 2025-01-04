@@ -43,14 +43,14 @@ public class DriverInstance{
 
 			remoteWebdriver.set(new RemoteWebDriver(new URL("http://20.40.50.167:4444/wd/hub"), options));
 			break;
-		case "firefox":
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			DesiredCapabilities desiredCap = new DesiredCapabilities();
-			desiredCap.setBrowserName("firefox");
-			desiredCap.setPlatform(Platform.LINUX);
-			firefoxOptions.merge(desiredCap);
-			remoteWebdriver.set(new RemoteWebDriver(new URL("http://4.240.105.183:4444/wd/hub"), firefoxOptions));
-			break;
+		// case "firefox":
+		// 	FirefoxOptions firefoxOptions = new FirefoxOptions();
+		// 	DesiredCapabilities desiredCap = new DesiredCapabilities();
+		// 	desiredCap.setBrowserName("firefox");
+		// 	desiredCap.setPlatform(Platform.LINUX);
+		// 	firefoxOptions.merge(desiredCap);
+		// 	remoteWebdriver.set(new RemoteWebDriver(new URL("http://4.240.105.183:4444/wd/hub"), firefoxOptions));
+		// 	break;
 		case "edge":
 			EdgeOptions edgeOptions = new EdgeOptions();
 			DesiredCapabilities desiredCapEdge = new DesiredCapabilities();
